@@ -1,0 +1,230 @@
+html {
+  font-size: 16px;
+}
+
+p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.75rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+.bg-noir {
+  background-color: #3a3939;
+}
+
+.bg-green {
+  background-color: #27972d;
+  color: white;
+}
+
+.btn-green {
+  background-color: #27972d;
+  color: white;
+}
+
+.btn-green:hover {
+  background-color: #bdcf1a;
+  color: white;
+}
+
+button {
+  animation: fade 1s ease forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img {
+    font-size: 3.5rem;
+  }
+}
+
+.section1 {
+  background-image: url("../../images/coins.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 70px 30px;
+}
+
+.section1 h1, .section1 p, .section1 a {
+  animation: fade 3s ease forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section2 {
+  margin: 1rem;
+}
+
+@media (max-width: 650px) {
+  .section2 {
+    margin: 0;
+  }
+}
+
+.section2 .flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  overflow: hidden;
+}
+
+@media (max-width: 650px) {
+  .section2 .flex-container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 650px) {
+  .section2 .flex-container:last-child {
+    flex-direction: column;
+  }
+}
+
+.section2 .flex-container:last-child {
+  margin-top: 1rem;
+}
+
+@media (max-width: 650px) {
+  .section2 .flex-container:last-child {
+    margin-top: 0;
+  }
+}
+
+.section2 .flex-container .flex-item-left, .section2 .flex-container .flex-item-right {
+  padding: 70px;
+  flex: 50%;
+  color: white;
+  overflow: hidden;
+  font-weight: 300;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .section2 .flex-container .flex-item-left, .section2 .flex-container .flex-item-right {
+    padding: 30px;
+  }
+}
+
+.section2 .flex-container .flex-item-left:hover, .section2 .flex-container .flex-item-right:hover {
+  background-color: #292929 !important;
+  color: #27972d !important;
+}
+
+.section2 .flex-container .flex-item-left {
+  margin-right: 1rem;
+}
+
+@media (max-width: 650px) {
+  .section2 .flex-container .flex-item-left {
+    margin-right: 0;
+  }
+}
+
+.section2 .flex-container .flex-item-left:first-child:after {
+  background-color: red;
+}
+
+.section2 .flex-container .flex-item-right {
+  flex: 50%;
+}
+
+.section4 .card {
+  overflow: hidden;
+}
+
+.section4 .card:before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 200%;
+  background: linear-gradient(#000000, #27972d);
+  animation: anime 10s linear infinite;
+  margin-left: 35%;
+  margin-top: -35%;
+}
+
+@keyframes anime {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(350deg);
+  }
+}
+
+.section4 .card:after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background-color: white;
+}
+
+.section4 .card h5, .section4 .card p {
+  position: relative;
+  z-index: 1;
+}
+
+.section5 {
+  z-index: 1;
+  margin-bottom: -8rem;
+}
+
+.section6 {
+  height: 250px;
+}
+
+.section6 div:first-child {
+  border-top-left-radius: 1.875rem;
+  border-top-right-radius: 1.875rem;
+}

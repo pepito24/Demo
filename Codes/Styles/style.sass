@@ -1,0 +1,222 @@
+
+// ------- Fonts -------- // 
+    
+html 
+    font-size: 16px
+
+p 
+    font-size: 0.875rem
+    line-height: 1.6
+
+h1,h2,h3,h4,h5
+   line-height: 1.6
+
+h1 
+    font-size: 3rem
+
+h2 
+    font-size: 2.75rem
+
+h3 
+    font-size: 2.25rem
+
+h4 
+    font-size: 2rem
+
+h5 
+    font-size: 1.1rem
+
+.bg-noir
+    background-color: #3a3939
+
+.bg-green
+    background-color: #27972d
+    color: white
+
+.btn-green 
+    background-color: #27972d
+    color: white
+
+    &:hover
+        background-color: #bdcf1a
+        color: white
+
+
+// ------- Button -------- // 
+
+
+button 
+    animation: fade 1s ease forwards
+
+@keyframes fade 
+    0%
+        opacity: 1
+        pointer-events: all
+        
+    100%
+        opacity: 0
+        pointer-events: none
+        
+
+// ------- bd-placeholder-img  -------- // 
+
+.bd-placeholder-img 
+    font-size: 1.125rem
+    text-anchor: middle
+    -webkit-user-select: none
+    -moz-user-select: none
+    user-select: none
+
+
+    @media (min-width: 768px) 
+        .bd-placeholder-img-lg 
+        font-size: 3.5rem
+          
+
+// ------- Section 1 -------- // 
+
+.section1
+    background-image: url("../../images/coins.jpg")
+    background-position: center
+    background-repeat: no-repeat 
+    background-size: cover
+    color: white
+    padding: 70px 30px
+  
+    h1, p, a
+        animation: fade 3s ease forwards
+
+    @keyframes fade 
+        0%
+            opacity: 0
+        
+        100%
+            opacity: 1
+        
+        
+// ------- Section 2 -------- // 
+
+.section2
+    margin: 1rem 
+
+    @media (max-width: 650px) 
+        margin: 0
+
+    .flex-container 
+        display: flex
+        flex-direction: row
+        font-size: 30px
+        text-align: center
+        overflow: hidden
+
+
+        @media (max-width: 650px) 
+            flex-direction: column-reverse
+
+        &:last-child
+            @media (max-width: 650px) 
+                flex-direction: column
+            
+
+        &:last-child
+            margin-top: 1rem
+
+            @media (max-width: 650px) 
+                margin-top: 0
+            
+
+        .flex-item-left , .flex-item-right
+            padding: 70px
+            flex: 50% 
+            color: white
+            overflow: hidden
+
+            @media (max-width: 800px) 
+                padding: 30px
+
+
+            h2 
+            font-weight: 300
+            line-height: 1.2
+            position: relative
+            z-index: 1
+
+            &:hover
+                background-color: #292929!important
+                color: #27972d!important
+
+
+        .flex-item-left
+            margin-right: 1rem
+
+            @media (max-width: 650px) 
+                margin-right: 0
+
+            &:first-child
+                &:after 
+                    background-color: red
+                    
+
+        .flex-item-right 
+            flex: 50% 
+            
+
+    
+    
+
+// ------- Section 4 -------- // 
+
+
+.section4 
+    
+    .card
+        overflow: hidden
+        
+        &:before
+            content: ''
+            position: absolute 
+            width: 100px
+            height: 200%
+            background: linear-gradient(#000000,#27972d)
+            animation: anime 10s linear infinite
+            margin-left: 35%
+            margin-top: -35%
+
+            @keyframes anime 
+                0%
+                   transform: rotate(0deg)
+        
+                100%
+                    transform: rotate(350deg)
+
+        &:after 
+            content: '' 
+            position: absolute 
+            inset: 4px
+            background-color: white
+
+        h5, p 
+            position: relative
+            z-index: 1
+
+
+
+
+// ------- Section 5 -------- // 
+
+
+.section5 
+    z-index: 1
+    margin-bottom: -8rem
+
+    
+// ------- Section 6 -------- // 
+
+
+.section6 
+    height: 250px
+
+    div:first-child
+        border-top-left-radius: 1.875rem
+        border-top-right-radius: 1.875rem
+
